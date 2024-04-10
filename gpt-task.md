@@ -1,90 +1,86 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
-
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+# Design Your Own Traffic Light System
 
 ## Deadline
-This assignment is due before the next scheduled class.
+This task should be finished before the next class session.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+For details on how to do and submit the assignment, please refer to the assignments section of the course instructions.
 
 ## Preparation
+- Review Module 2: Exploring Classes in Java, focusing on class design, constructing objects, and using methods.
+- Access the OLI material through either the course's Canvas page or directly via the provided webpage.
 
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
-
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+Note: The OLI material might not perfectly match up with this year's course, so feel free to read ahead if you can't find the specific material mentioned here.
 
 ## Learning Goals
-
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+You will practice:
+- Designing Java classes.
+- Implementing instance variables and methods.
+- Understanding object-oriented programming concepts such as encapsulation and constructors.
+- Using the `main` method to run your program.
 
 ## Troubleshooting Guide
+If you encounter issues:
+1. Check the weekly [posted issues](https://example.edu/inda-23/help/issues) to see if others have the same problem.
+2. If not, post a question by creating a [New Issue](https://example.edu/inda-23/help/issues/new) with a detailed title.
+3. Consult a TA during the weekly lab session. Check your schedule for the next available lab time.
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+Remember, you can discuss with peers, but do not share answers.
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+## Assignment
 
-## Assignment Details
+Construct a traffic light system simulation using Java. This system should include different states a traffic light can be in (red, yellow, green) and should perform transitions between these states in a typical traffic light cycle.
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+## Designing Your Traffic Light System
 
-### Task 1: Class Creation
+### Starter Guide
+1. **Set Up Your Environment:**
+   Create a Java file named `TrafficLight.java` in your `src` folder. This file will host your `TrafficLight` class.
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+2. **Define Your Properties:**
+   A traffic light typically has three states: red, yellow, and green. Represent these states within your class using a String variable called `state`. 
 
-### Task 2: Defining Properties
+3. **Initialization:**
+   Define a constructor for your `TrafficLight` class that allows setting the initial state of the traffic light.
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+4. **State Management:**
+   Implement methods to change the traffic light's state among red, yellow, and green in the sequence that real traffic lights operate.
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+### Implementing The Simulation
 
-### Task 3: Spawning Galaxy Pets
+1. **Create the Main Method:**
+   Within the `TrafficLight` class, add a `main` method. This method will be your entry point for the simulation.
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+2. **Instantiation:**
+   In the `main` method, create an instance of `TrafficLight` representing a traffic light at an intersection.
 
-### Task 4: Encapsulation with Getters and Setters
+3. **Running The Simulation:**
+   Show the state transitions for a typical cycle (e.g., green to yellow, yellow to red, and red to green) by invoking the state-changing methods you created. Print the current state to the console each time it changes, so you can observe the sequence of states.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+### Further Exploration
 
-### Task 5: Constructing with Constructors
+1. **Advanced Modeling:**
+   Consider adding a timer to simulate the duration each light stays on before transitioning to the next state. This part can be implemented using basic looping and sleep methods.
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+2. **Multi-Light Simulation:**
+   If time permits, try simulating a system with multiple traffic lights working in synchrony, such as those found at an intersection with pedestrian crossings.
 
-### Task 6: Display Information
+## Quality Assurance
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+Make sure that your program:
+- Compiles and runs without errors.
+- Abides by standard Java naming conventions.
+- Prints the expected state transitions for at least one complete cycle.
 
-### Task 7: The Cosmic Challenge
+## Submission
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+Follow the course's standard submission process to submit your assignment.
 
-### Task 8: Understanding Scope and Shadowing
+## Extra Help
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+- Review the Java documentation for classes, objects, and methods if you get stuck.
+- Don't hesitate to reach out for help through the course forum or during lab sessions.
 
-## Final Checklist
+---
 
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
-
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+By completing this task, you'll gain a deeper understanding of how classes and objects work in Java, and you'll get a taste of how object-oriented programming can be used to model real-world systems. Good luck!
